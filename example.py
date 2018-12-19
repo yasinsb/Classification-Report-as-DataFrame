@@ -16,12 +16,14 @@ X = np.array([y[i]*2+normalvariate(0,1) for i in range(100)])
 X = X.reshape(-1,1)
 
 #Using Logistic Regression to predict. Note than any classifier could be used
-LR_CLF = LogisticRegression()
+LR_CLF = LogisticRegression(solver='lbfgs')
 LR_CLF.fit(X,y.ravel())
 y_pred = LR_CLF.predict(X)
 
 #the desired output in a dataframe
 CR_df = classification_report_df(y,y_pred,['A','B'])
+
+print(CR_df)
 
 #to get the recall for A class you can use:
 #CR_df.loc['A']['recall']
