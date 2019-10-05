@@ -3,7 +3,7 @@ Created on Wed Dec 19 13:31:57 2018
 
 @author: Yasin Salimibeni
 
-This small madule is created to simply convert a classification report into a 
+This small module is created to simply convert a classification report into a 
 dataframe for the ease of use and comparision. It will also be easier to use to_csv
 method to send the resuls to csv/excel and put them on a presentation slide.
 Feel free to copy/edit the code for any purpose bute take the code as is,
